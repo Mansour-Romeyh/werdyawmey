@@ -28,37 +28,7 @@ class HomePage extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      drawer: Drawer(
-        child: Column(
-          children: [
-            UserAccountsDrawerHeader(
-              accountName: Text(
-                'الاتصال بالمطور',
-                style: TextStyle(fontFamily: 'Amiri', fontSize: 18),
-              ),
-              accountEmail: Text(
-                'رقم الواتساب: +972592345890',
-                style: TextStyle(fontFamily: 'Amiri', fontSize: 20),
-              ),
-           
-            ),
-            ListTile(
-              leading: Icon(Icons.chat),
-              title: Text(
-                'الدردشة على واتساب',
-                style: TextStyle(fontFamily: 'Amiri', fontSize: 20),
-              ),
-              onTap: () {
-                // وضع رابط الواتساب هنا
-                String url = "https://wa.me/972592345890";
-                // فتح الرابط في المتصفح أو تطبيق الواتساب
-                launch(url);
-              },
-            ),
-            // يمكنك إضافة المزيد من العناصر هنا
-          ],
-        ),
-      ),
+      
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
